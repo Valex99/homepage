@@ -1,10 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  border: 1px solid red;
+}
+
+body {
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   background-color: #0991b1;
   clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
   color: white;
-  padding: 50px;
 }
 
 .footer {
-    
+}
+
+.image-container {
+  width: 80%;
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.portrait {
+  width: 100%;
+}
+
+.portrait-name {
+  position: absolute;
+  color: white;
+  bottom: 20px;
+  width: 80%;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+/**/
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.about-me {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.social-icons {
+ margin-top: 16px;
+}
+
+.icon {
+    height: 30px;
+    padding: 0 8px;
+}
+
+/**/
+.my-work-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column that takes up the full width */
+    grid-template-rows: auto; /* Adjusts row height automatically based on content */
+    gap: 50px; /* Optional: adds space between rows */
+}
+
+.ptoject {
+    padding: 20px;
+}
+
+.project-icon {
+    height: 24px;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.project-name {
+    flex: 1;
+}
+
+.name-description {
+    display: flex;
+    padding: 0 20px;
+}
+
+.project-description {
+    padding: 0 20px;
+    padding-bottom: 10px;
 }
