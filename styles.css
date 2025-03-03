@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+
 
   border: 1px solid red;
 }
@@ -20,15 +22,13 @@ header {
   color: white;
 }
 
-.footer {
-}
-
 .image-container {
   width: 80%;
   padding: 20px 0;
   position: relative;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 .portrait {
@@ -46,71 +46,95 @@ header {
 
 /**/
 .about-me-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    padding: 20px;
+  padding: 20px;
 }
 
 .about-me {
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .description {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .social-icons {
- margin-top: 16px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .icon {
-    height: 30px;
-    padding: 0 8px;
+  height: 30px;
+  padding: 0 8px;
 }
 
 /**/
 .my-work-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 column that takes up the full width */
-    grid-template-rows: auto; /* Adjusts row height automatically based on content */
-    gap: 50px; /* Optional: adds space between rows */
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column that takes up the full width */
+  grid-template-rows: auto; /* Adjusts row height automatically based on content */
+  gap: 50px; /* Optional: adds space between rows */
 }
 
 .ptoject {
-    padding: 20px;
+  padding: 20px;
 }
 
 .project-icon {
-    height: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 .project-img {
-    width: 100%;
+  width: 100%;
 }
 
 .project-name {
-    flex: 1;
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .name-description {
-    display: flex;
-    padding: 0 20px;
+  display: flex;
+  padding: 0 20px;
 }
 
 .project-description {
-    padding: 0 20px;
+  padding: 0 20px;
+  padding-bottom: 10px;
+}
+
+.contact-me-div {
+    display: flex;
+    justify-content: center;
     padding-bottom: 10px;
+}
+
+/**/
+.footer {
+  background-color: #0991b1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.para {
+    margin-bottom: 10px;
 }
